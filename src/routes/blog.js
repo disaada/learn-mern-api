@@ -9,4 +9,10 @@ app.post('/', [
   body('body').isLength({min: 5})
 ], controller.create)
 
+app.get('/', controller.getAll)
+
+app.get('/:id', controller.getById)
+
+app.put('/:id',controller.edit)
+
 module.exports = app
