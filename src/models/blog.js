@@ -2,22 +2,10 @@ const mongo = require('mongoose')
 const schema = mongo.Schema
 
 const Blog = new schema({
-  title: {
-    type: String,
-    required: true,
-  },
-  body: {
-    type: String,
-    required: true,
-  },
-  image: {
-    type: String,
-    required: true,
-  },
-  author: {
-    type: Object,
-    required: false,
-  }
+  title: String,
+  body: String,
+  image: String,
+  // author: Object
 }, {
   timestamps: true
 })

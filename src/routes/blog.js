@@ -13,6 +13,8 @@ app.get('/', controller.getAll)
 
 app.get('/:id', controller.getById)
 
-app.put('/:id',controller.edit)
+app.put('/:id', controller.edit)
+
+app.delete('/:id', controller.drop)
 
 module.exports = app
